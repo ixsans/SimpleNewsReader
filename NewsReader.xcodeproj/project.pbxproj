@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		467BA4D31F789BF200EAEB41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467BA4D21F789BF200EAEB41 /* AppDelegate.swift */; };
-		467BA4D51F789BF200EAEB41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467BA4D41F789BF200EAEB41 /* ViewController.swift */; };
 		467BA4D81F789BF200EAEB41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467BA4D61F789BF200EAEB41 /* Main.storyboard */; };
 		467BA4DB1F789BF200EAEB41 /* NewsReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 467BA4D91F789BF200EAEB41 /* NewsReader.xcdatamodeld */; };
 		467BA4DD1F789BF200EAEB41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467BA4DC1F789BF200EAEB41 /* Assets.xcassets */; };
 		467BA4E01F789BF200EAEB41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467BA4DE1F789BF200EAEB41 /* LaunchScreen.storyboard */; };
+		467BA4E81F78A91500EAEB41 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467BA4E71F78A91500EAEB41 /* ArticleCell.swift */; };
+		467BA4EA1F78AB3100EAEB41 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467BA4E91F78AB3100EAEB41 /* Article.swift */; };
+		467BA4EC1F78ABE200EAEB41 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467BA4EB1F78ABE200EAEB41 /* ArticleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		467BA4CF1F789BF100EAEB41 /* NewsReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		467BA4D21F789BF200EAEB41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		467BA4D41F789BF200EAEB41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		467BA4D71F789BF200EAEB41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		467BA4DA1F789BF200EAEB41 /* NewsReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewsReader.xcdatamodel; sourceTree = "<group>"; };
 		467BA4DC1F789BF200EAEB41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		467BA4DF1F789BF200EAEB41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		467BA4E11F789BF200EAEB41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		467BA4E71F78A91500EAEB41 /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		467BA4E91F78AB3100EAEB41 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		467BA4EB1F78ABE200EAEB41 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				467BA4D21F789BF200EAEB41 /* AppDelegate.swift */,
-				467BA4D41F789BF200EAEB41 /* ViewController.swift */,
 				467BA4D61F789BF200EAEB41 /* Main.storyboard */,
 				467BA4DC1F789BF200EAEB41 /* Assets.xcassets */,
 				467BA4DE1F789BF200EAEB41 /* LaunchScreen.storyboard */,
 				467BA4E11F789BF200EAEB41 /* Info.plist */,
 				467BA4D91F789BF200EAEB41 /* NewsReader.xcdatamodeld */,
+				467BA4E71F78A91500EAEB41 /* ArticleCell.swift */,
+				467BA4E91F78AB3100EAEB41 /* Article.swift */,
+				467BA4EB1F78ABE200EAEB41 /* ArticleViewController.swift */,
 			);
 			path = NewsReader;
 			sourceTree = "<group>";
@@ -140,9 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				467BA4E81F78A91500EAEB41 /* ArticleCell.swift in Sources */,
+				467BA4EC1F78ABE200EAEB41 /* ArticleViewController.swift in Sources */,
 				467BA4DB1F789BF200EAEB41 /* NewsReader.xcdatamodeld in Sources */,
-				467BA4D51F789BF200EAEB41 /* ViewController.swift in Sources */,
 				467BA4D31F789BF200EAEB41 /* AppDelegate.swift in Sources */,
+				467BA4EA1F78AB3100EAEB41 /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +312,7 @@
 				467BA4E61F789BF200EAEB41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
