@@ -15,6 +15,7 @@
 		467BA4E81F78A91500EAEB41 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467BA4E71F78A91500EAEB41 /* ArticleCell.swift */; };
 		467BA4EA1F78AB3100EAEB41 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467BA4E91F78AB3100EAEB41 /* Article.swift */; };
 		467BA4EC1F78ABE200EAEB41 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467BA4EB1F78ABE200EAEB41 /* ArticleViewController.swift */; };
+		467BA4F01F78E46900EAEB41 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467BA4EF1F78E46900EAEB41 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		467BA4E71F78A91500EAEB41 /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		467BA4E91F78AB3100EAEB41 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		467BA4EB1F78ABE200EAEB41 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		467BA4EF1F78E46900EAEB41 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				467BA4E71F78A91500EAEB41 /* ArticleCell.swift */,
 				467BA4E91F78AB3100EAEB41 /* Article.swift */,
 				467BA4EB1F78ABE200EAEB41 /* ArticleViewController.swift */,
+				467BA4EF1F78E46900EAEB41 /* WebViewController.swift */,
 			);
 			path = NewsReader;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				467BA4E81F78A91500EAEB41 /* ArticleCell.swift in Sources */,
+				467BA4F01F78E46900EAEB41 /* WebViewController.swift in Sources */,
 				467BA4EC1F78ABE200EAEB41 /* ArticleViewController.swift in Sources */,
 				467BA4DB1F789BF200EAEB41 /* NewsReader.xcdatamodeld in Sources */,
 				467BA4D31F789BF200EAEB41 /* AppDelegate.swift in Sources */,

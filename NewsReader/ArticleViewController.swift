@@ -48,11 +48,9 @@ class ArticleViewController: UIViewController, UITableViewDelegate, UITableViewD
                             article.image = urlToImage
                         }
                         self.articles?.append(article)
-                        print("data:.....")
                     }
                 }
                 DispatchQueue.main.async {
-                    print("data:\(self.articles?.count)")
                     self.tableView.reloadData()
                 }
                 
@@ -76,9 +74,9 @@ class ArticleViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell.titleLabel.text = article?.headline
         cell.descLabel.text = article?.desc
         cell.authorLabel.text = article?.author
-        cell.imageView?.downloadImage(from: (self.articles?[indexPath.item].image)!)
+        cell.thumbnailImageView?.downloadImage(from: (article?.image)!)
         
-        print("data:\(article?.headline)")
+        print("Image: \(article?.image)")
         
         return cell
     }
@@ -91,6 +89,15 @@ class ArticleViewController: UIViewController, UITableViewDelegate, UITableViewD
         return self.articles?.count ?? 0
     }
     
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let webVc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "web") as! WebViewController
+        
+        webVc.url = self.articles?[indexPath.item].url
+        
+        present(webVc, animated: true, completion: nil)
+        
+    }
 
     
 }
@@ -112,5 +119,6 @@ extension UIImageView{
             }
             
         }
+        task.resume()
     }
 }
